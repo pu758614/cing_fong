@@ -8,16 +8,51 @@
             </a>
         </li>
         <li class="">
-            <a href="user" class="waves-effect waves-dark">
+            <a href="company_client_info" class="waves-effect waves-dark">
                 <span class="pcoded-micon"><i class="ti-user"></i></span>
-                <span class="pcoded-mtext" data-i18n="nav.dash.main">客戶資料</span>
+                <span class="pcoded-mtext" data-i18n="nav.dash.main">公司客戶資料</span>
+                <span class="pcoded-mcaret"></span>
+            </a>
+        </li>
+        <li class="">
+            <a href="user_client_info" class="waves-effect waves-dark">
+                <span class="pcoded-micon"><i class="ti-user"></i></span>
+                <span class="pcoded-mtext" data-i18n="nav.dash.main">個人客戶資料</span>
                 <span class="pcoded-mcaret"></span>
             </a>
         </li>
         <li class="">
             <a href="shipping_reoord" class="waves-effect waves-dark">
                 <span class="pcoded-micon"><i class="ti-list"></i></span>
-                <span class="pcoded-mtext" data-i18n="nav.dash.main">出貨紀錄</span>
+                <span class="pcoded-mtext" data-i18n="nav.dash.main">待出貨</span>
+                <span class="pcoded-mcaret"></span>
+            </a>
+        </li>
+        <li class="">
+            <a href="shipping_reoord" class="waves-effect waves-dark">
+                <span class="pcoded-micon"><i class="ti-list"></i></span>
+                <span class="pcoded-mtext" data-i18n="nav.dash.main">報價未出</span>
+                <span class="pcoded-mcaret"></span>
+            </a>
+        </li>
+        <li class="">
+            <a href="shipping_reoord" class="waves-effect waves-dark">
+                <span class="pcoded-micon"><i class="ti-list"></i></span>
+                <span class="pcoded-mtext" data-i18n="nav.dash.main">待處理</span>
+                <span class="pcoded-mcaret"></span>
+            </a>
+        </li>
+        <li class="">
+            <a href="shipping_reoord" class="waves-effect waves-dark">
+                <span class="pcoded-micon"><i class="ti-list"></i></span>
+                <span class="pcoded-mtext" data-i18n="nav.dash.main">待收款</span>
+                <span class="pcoded-mcaret"></span>
+            </a>
+        </li>
+        <li class="">
+            <a href="shipping_reoord" class="waves-effect waves-dark">
+                <span class="pcoded-micon"><i class="ti-list"></i></span>
+                <span class="pcoded-mtext" data-i18n="nav.dash.main">待維修</span>
                 <span class="pcoded-mcaret"></span>
             </a>
         </li>

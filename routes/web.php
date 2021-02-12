@@ -11,23 +11,27 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Route::get('store', function () {
-//     return view('frontend.cing_fong');
-// })->name('cing_fong');
+Route::get('/', function () {
+    return view('cing_fong_shipping_reoord');
+});
 
 Route::get('shipping_reoord', function () {
     return view('cing_fong_shipping_reoord');
 });
 
-Route::get('user', function () {
+Route::get('user_client_info', function () {
     return view('cing_fong_user');
 });
+
+Route::get('company_client_info', function () {
+    return view('cing_fong_company');
+});
+
 Route::get('user_info', function () {
     return view('cing_fong_user_info');
+});
+Route::get('company_info', function () {
+    return view('cing_fong_company_info');
 });
 
 Route::get('shipping_edit', function () {
