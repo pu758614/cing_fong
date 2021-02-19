@@ -7,6 +7,9 @@
     span{
         color: 000000;
     }
+    .badge{
+        font-size:130%;
+    }
 </style>
 <div class="pcoded-inner-content">
     <!-- Main-body start -->
@@ -228,7 +231,7 @@
                                                 <div class="col-sm-4">
                                                     <span  style="font-size:14px;font-weight:bold;float:right;">建單日期：110/01/01</span>
                                                 </div>
-                                                <div class="col-sm-12">
+                                                <div class="col-sm-12" style="display: none;">
                                                     <table RULES=ALL class="table table-hover" style="border:3px #cccccc solid;">
                                                     <thead>
                                                         <tr>
@@ -254,9 +257,6 @@
                                                                             <div class="col-sm-12">
                                                                                     加購配件:  XXXXXCCCCC
                                                                             </div>
-                                                                            <div class="col-sm-12"><br>
-                                                                                <button class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
-                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -272,16 +272,12 @@
                                                                             <div class="col-sm-12">
                                                                                     加購配件:  XXXXXCCCCC
                                                                             </div>
-                                                                            <div class="col-sm-12"><br>
-                                                                                <button class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
-                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-12"><br>
+                                                                <!-- <div class="col-sm-12"><br>
                                                                     <button class="btn waves-effect waves-light btn-success btn-square">新增</button>
-                                                                </div>
-
+                                                                </div> -->
                                                             </td>
 
                                                         </tr>
@@ -301,40 +297,24 @@
                                                                             <div class="col-sm-12">
                                                                                     加購配件:  XXXXXCCCCC
                                                                             </div>
-                                                                            <div class="col-sm-12"><br>
-                                                                                <button class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
-                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="col-sm-12"><br>
-                                                                    <button class="btn waves-effect waves-light btn-success btn-square">新增</button>
                                                                 </div>
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                     </table>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                                <div class="card">
-                                    <div class="card-block">
-
-                                        <div class="page-header-breadcrumb">
-                                            <div class="form-group row">
-                                                <div class="col-sm-4">
-                                                    <span class="" style="font-size:14px;font-weight:bold;"><label class="badge badge-inverse-info">000004</label></span>
-                                                </div>
-                                                <div class="col-sm-4">
-
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <span  style="font-size:14px;font-weight:bold;float:right;">建單日期：110/01/01</span>
+                                                    <div style="font-size:20px">
+                                                        <div class="col-sm-12">
+                                                            總計  123456  元    含稅  123654  元
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            付款方式:
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12"><br>
+                                                        <button class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
+                                                    </div>
                                                 </div>
                                                 <div class="col-sm-12">
                                                     <table RULES=ALL class="table table-hover" style="border:3px #cccccc solid;">
@@ -353,17 +333,25 @@
                                                                 <div class="card">
                                                                     <div class="card-block">
                                                                         <div class="row">
-                                                                            <div class="col-sm-12">
-                                                                                品名:20吋【8極110V溫6】工業排風機【4葉鋁葉1.2mm】 CF-2018-3
+                                                                            <div class="col-sm-4">
+                                                                                日期:<input id="datepicker00" type="text" class="form-control datepicker" required="" value="">
                                                                             </div>
                                                                             <div class="col-sm-12">
-                                                                                原價:  88888  元    優惠價  666666  元      數量  6   台
+                                                                                品名:<input type="text" class="form-control" required="" value="20吋【8極110V溫6】工業排風機【4葉鋁葉1.2mm】 CF-2018-3">
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                原價: <input type="text" class="form-control" required="" value="88888">
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                優惠價:
+                                                                               <input type="text" class="form-control" required="" value="5555">
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                數量:
+                                                                               <input type="text" class="form-control" required="" value="3">
                                                                             </div>
                                                                             <div class="col-sm-12">
-                                                                                    加購配件:  XXXXXCCCCC
-                                                                            </div>
-                                                                            <div class="col-sm-12"><br>
-                                                                                <button class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
+                                                                            加購配件:<input type="text" class="form-control" required="" value="XXXXXCCCCC">
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -380,16 +368,12 @@
                                                                             <div class="col-sm-12">
                                                                                     加購配件:  XXXXXCCCCC
                                                                             </div>
-                                                                            <div class="col-sm-12"><br>
-                                                                                <button class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
-                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-12"><br>
+                                                                <!-- <div class="col-sm-12"><br>
                                                                     <button class="btn waves-effect waves-light btn-success btn-square">新增</button>
-                                                                </div>
-
+                                                                </div> -->
                                                             </td>
 
                                                         </tr>
@@ -409,116 +393,33 @@
                                                                             <div class="col-sm-12">
                                                                                     加購配件:  XXXXXCCCCC
                                                                             </div>
-                                                                            <div class="col-sm-12"><br>
-                                                                                <button class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
-                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="col-sm-12"><br>
-                                                                    <button class="btn waves-effect waves-light btn-success btn-square">新增</button>
                                                                 </div>
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                     </table>
+                                                    <div style="font-size:20px">
+                                                        <div class="col-sm-12">
+                                                            總計  123456  元    含稅  123654  元
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            付款方式:
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12"><br>
+                                                        <button class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
+                                                    </div>
+
                                                 </div>
 
                                             </div>
                                         </div>
 
                                     </div>
-
-                                </div>
-                                <div class="sub-title">109年</div>
-                                <div class="card">
-                                    <div class="card-block">
-
-                                        <div class="page-header-breadcrumb">
-                                            <div class="form-group row">
-                                                <div class="col-sm-4">
-                                                    <span class="" style="font-size:14px;font-weight:bold;"><label class="badge badge-inverse-info">000001</label></span>
-                                                </div>
-                                                <div class="col-sm-4">
-
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <span  style="font-size:14px;font-weight:bold;float:right;">建單日期：110/01/01</span>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                    <table RULES=ALL class="table table-hover" style="border:3px #cccccc solid;">
-                                                    <thead>
-                                                        <tr>
-                                                            <th width="10%">日期</th>
-                                                            <th></th>
-
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">103/6/25
-                                                            </th>
-                                                            <td>
-                                                                <div class="card">
-                                                                    <div class="card-block">
-                                                                        <div class="row">
-                                                                            <div class="col-sm-12">
-                                                                                品名:20吋【8極110V溫6】工業排風機【4葉鋁葉1.2mm】 CF-2018-3
-                                                                            </div>
-                                                                            <div class="col-sm-12">
-                                                                                原價:  88888  元    優惠價  666666  元      數量  6   台
-                                                                            </div>
-                                                                            <div class="col-sm-12">
-                                                                                    加購配件:  XXXXXCCCCC
-                                                                            </div>
-                                                                            <div class="col-sm-12"><br>
-                                                                                <button class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">103/5/10
-                                                            </th>
-                                                            <td>
-                                                                <div class="card">
-                                                                    <div class="card-block">
-                                                                        <div class="row">
-                                                                            <div class="col-sm-12">
-                                                                                品名:20吋【8極110V溫6】工業排風機【4葉鋁葉1.2mm】 CF-2018-3
-                                                                            </div>
-                                                                            <div class="col-sm-12">
-                                                                                原價:  88888  元    優惠價  666666  元      數量  6   台
-                                                                            </div>
-                                                                            <div class="col-sm-12">
-                                                                                    加購配件:  XXXXXCCCCC
-                                                                            </div>
-                                                                            <div class="col-sm-12"><br>
-                                                                                <button class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-12"><br>
-                                                                    <button class="btn waves-effect waves-light btn-success btn-square">新增</button>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                    </table>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-
                                 </div>
                             </div>
-
                         </div>
                         <!-- Row end -->
                     </div>
@@ -531,11 +432,11 @@
 @endsection
 
 <script>
+
     function edit() {
         $('.show_basic').hide();$('.edit_basic').show();
     }
     function save() {
         $('.show_basic').show();$('.edit_basic').hide();
     }
-
 </script>

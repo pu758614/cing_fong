@@ -26,7 +26,8 @@
     <!-- Required Fremwork -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap/css/bootstrap.min.css') }}" type="text/css" media="all">
     <!-- waves.css -->
-   
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <!-- themify-icons line icon -->
     <link rel="stylesheet" type="text/css"  href="{{ asset('icon/themify-icons/themify-icons.css') }}">
     <!-- ico font -->
@@ -105,7 +106,7 @@
                     </nav>
                     <div class="pcoded-content">
                         @yield('content')
-                        
+
                     </div>
                 </div>
             </div>
@@ -293,6 +294,7 @@
 <script type="text/javascript" src="{{ asset('js/jquery-ui/jquery-ui.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/popper.js/popper.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/bootstrap/js/bootstrap.min.js') }}"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- waves js -->
 <script src="{{ asset('pages/waves/js/waves.min.js') }}"></script>
 
@@ -310,6 +312,12 @@
 <script src="{{ asset('js/pcoded.min.js') }}" ></script>
 <script src="{{ asset('js/vertical-layout.min.js') }}" ></script>
 <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/datepicker-zh-TW.js') }}"></script>
+<script>
+    $(document).ready(function () {
+        $( ".datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+    });
+</script>
 </body>
 
 </html>
