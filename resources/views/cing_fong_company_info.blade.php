@@ -177,11 +177,20 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-12">
                                             <span style="font-size:14px;font-weight:bold;">購買方式：</span>
-                                            <span class="" style="">adasas</span>
                                         </div>
+                                        <div class="col-sm-6">
+                                            <dl class="dl-horizontal row">
+                                                <dt class="col-sm-2">1.露天</dt>
+                                                <dd class="col-sm-9">w54862w.</dd>
+                                                <dt class="col-sm-2">2.奇摩</dt>
+                                                <dd class="col-sm-9">Y8875077980</dd>
+                                            </dl>
+                                        </div>
+
                                     </div>
+
                                     <div class="form-group row">
                                         <div class="col-sm-3">
                                             <span style="font-size:14px;font-weight:bold;">地址：</span>
@@ -231,7 +240,7 @@
                                                 <div class="col-sm-4">
                                                     <span  style="font-size:14px;font-weight:bold;float:right;">建單日期：110/01/01</span>
                                                 </div>
-                                                <div class="col-sm-12" style="display: none;">
+                                                <div class="col-sm-12" id='view_record'>
                                                     <table RULES=ALL class="table table-hover" style="border:3px #cccccc solid;">
                                                     <thead>
                                                         <tr>
@@ -275,9 +284,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <!-- <div class="col-sm-12"><br>
-                                                                    <button class="btn waves-effect waves-light btn-success btn-square">新增</button>
-                                                                </div> -->
+
                                                             </td>
 
                                                         </tr>
@@ -313,28 +320,23 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-12"><br>
-                                                        <button class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
+                                                        <button onclick="edit_record()" class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-12">
+                                                <div class="col-sm-12" id='edit_record' style="display: none;">
                                                     <table RULES=ALL class="table table-hover" style="border:3px #cccccc solid;">
-                                                    <thead>
-                                                        <tr>
-                                                            <th width="10%">日期</th>
-                                                            <th></th>
-
-                                                        </tr>
-                                                    </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <th scope="row">103/6/25
-                                                            </th>
                                                             <td>
                                                                 <div class="card">
                                                                     <div class="card-block">
                                                                         <div class="row">
-                                                                            <div class="col-sm-4">
-                                                                                日期:<input id="datepicker00" type="text" class="form-control datepicker" required="" value="">
+                                                                            <div class="col-sm-4" style="display: flex;">
+                                                                                日期:&nbsp&nbsp<input id="datepicker00" type="text" class="form-control datepicker" required="" value="">
+                                                                            </div>
+                                                                            <div class = 'col-sm-4 '></div>
+                                                                            <div class='col-sm-4' style="text-align:right;" >
+                                                                                <input type="button" class="btn btn-danger waves-effect waves-light" value="刪除">
                                                                             </div>
                                                                             <div class="col-sm-12">
                                                                                 品名:<input type="text" class="form-control" required="" value="20吋【8極110V溫6】工業排風機【4葉鋁葉1.2mm】 CF-2018-3">
@@ -353,50 +355,78 @@
                                                                             <div class="col-sm-12">
                                                                             加購配件:<input type="text" class="form-control" required="" value="XXXXXCCCCC">
                                                                             </div>
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card">
                                                                     <div class="card-block">
                                                                         <div class="row">
-                                                                            <div class="col-sm-12">
-                                                                                品名:20吋【8極110V溫6】工業排風機【4葉鋁葉1.2mm】 CF-2018-3
+                                                                            <div class="col-sm-4" style="display: flex;">
+                                                                                日期：<input id="datepicker00" type="text" class="form-control datepicker" required="" value="">
+                                                                            </div>
+                                                                            <div class = 'col-sm-4 '></div>
+                                                                            <div class='col-sm-4' style="text-align:right;" >
+                                                                                <input type="button" class="btn btn-danger waves-effect waves-light" value="刪除">
                                                                             </div>
                                                                             <div class="col-sm-12">
-                                                                                原價:  88888  元    優惠價  666666  元      數量  6   台
+                                                                                品名:<input type="text" class="form-control" required="" value="20吋【8極110V溫6】工業排風機【4葉鋁葉1.2mm】 CF-2018-3">
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                原價: <input type="text" class="form-control" required="" value="88888">
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                優惠價:
+                                                                               <input type="text" class="form-control" required="" value="5555">
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                數量:
+                                                                               <input type="text" class="form-control" required="" value="3">
                                                                             </div>
                                                                             <div class="col-sm-12">
-                                                                                    加購配件:  XXXXXCCCCC
+                                                                            加購配件:<input type="text" class="form-control" required="" value="XXXXXCCCCC">
                                                                             </div>
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <!-- <div class="col-sm-12"><br>
+                                                                <div class="card">
+                                                                    <div class="card-block">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-4" style="display: flex;">
+                                                                                日期：<input id="datepicker00" type="text" class="form-control datepicker" required="" value="">
+                                                                            </div>
+                                                                            <div class = 'col-sm-4 '></div>
+                                                                            <div class='col-sm-4' style="text-align:right;" >
+                                                                                <input type="button" class="btn btn-danger waves-effect waves-light" value="刪除">
+                                                                            </div>
+                                                                            <div class="col-sm-12">
+                                                                                品名:<input type="text" class="form-control" required="" value="20吋【8極110V溫6】工業排風機【4葉鋁葉1.2mm】 CF-2018-3">
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                原價: <input type="text" class="form-control" required="" value="88888">
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                優惠價:
+                                                                               <input type="text" class="form-control" required="" value="5555">
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                數量:
+                                                                               <input type="text" class="form-control" required="" value="3">
+                                                                            </div>
+                                                                            <div class="col-sm-12">
+                                                                            加購配件:<input type="text" class="form-control" required="" value="XXXXXCCCCC">
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-12" style="text-align:center;"><br>
                                                                     <button class="btn waves-effect waves-light btn-success btn-square">新增</button>
-                                                                </div> -->
+                                                                </div>
                                                             </td>
 
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">103/5/10
-                                                            </th>
-                                                            <td>
-                                                                <div class="card">
-                                                                    <div class="card-block">
-                                                                        <div class="row">
-                                                                            <div class="col-sm-12">
-                                                                                品名:20吋【8極110V溫6】工業排風機【4葉鋁葉1.2mm】 CF-2018-3
-                                                                            </div>
-                                                                            <div class="col-sm-12">
-                                                                                原價:  88888  元    優惠價  666666  元      數量  6   台
-                                                                            </div>
-                                                                            <div class="col-sm-12">
-                                                                                    加購配件:  XXXXXCCCCC
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                     </table>
@@ -408,12 +438,12 @@
                                                             付款方式:
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12"><br>
-                                                        <button class="btn btn-primary btn-round waves-effect waves-light">編輯</button>
+                                                    <div class="col-sm-12" style="text-align:right;"><br>
+                                                        <button class="btn btn-primary btn-round waves-effect waves-light" onclick="save_record()">儲存</button>&nbsp;
+                                                        <button class="btn btn-inverse btn-round waves-effect waves-light" onclick="save_record()">取消</button>&nbsp;
+                                                        <button class="btn btn-danger btn-round waves-effect waves-light">刪除</button>
                                                     </div>
-
                                                 </div>
-
                                             </div>
                                         </div>
 
@@ -431,6 +461,9 @@
 </div>
 @endsection
 
+
+
+
 <script>
 
     function edit() {
@@ -439,4 +472,14 @@
     function save() {
         $('.show_basic').show();$('.edit_basic').hide();
     }
+
+    function edit_record() {
+        $('#edit_record').show();
+        $('#view_record').hide();
+    }
+    function save_record() {
+        $('#edit_record').hide();
+        $('#view_record').show();
+    }
+
 </script>
