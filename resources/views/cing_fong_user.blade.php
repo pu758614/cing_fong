@@ -21,7 +21,7 @@
                                         <th>名稱</th>
                                         <th>聯絡人</th>
                                         <th>電話</th>
-                                        
+
                                         <th>備註</th>
                                         <th style="text-align:center">編輯</th>
                                     </tr>
@@ -34,9 +34,17 @@
                                         <td>07-3419215</td>
                                         <td>XX</td>
                                         <td  style="text-align:center">
-                                            <a href="user_info" >
-                                                <span class="pcoded-micon"><i class="ti-pencil"></i></span>
-                                            </a>
+                                            <div class="">
+                                                <a class="dropdown-toggle dropdown" data-toggle="dropdown" href="#" data-dropup-auto="false">
+                                                    <span class="pcoded-micon"><i class="ti-pencil"></i></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenuLink">
+                                                    <a class="dropdown-item waves-light waves-effect" href="user_info">編輯</a>
+                                                    <a class="dropdown-item waves-light waves-effect" href="#">待出貨</a>
+                                                    <a class="dropdown-item waves-light waves-effect" href="#">待收款</a>
+                                                    <a class="dropdown-item waves-light waves-effect" href="#">待收款</a>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr><a href=""></a>
@@ -44,12 +52,20 @@
                                         <td>林先生</td>
                                         <td>慶豐電機</td>
                                         <td>07-1234567</td>
-                                        
+
                                         <td></td>
                                         <td  style="text-align:center">
-                                            <a href="user_info">
-                                                <span class="pcoded-micon"><i class="ti-pencil"></i></span>
-                                            </a>
+                                            <div class="">
+                                                <a class="dropdown-toggle dropdown" data-toggle="dropdown" href="#" data-dropup-auto="false">
+                                                    <span class="pcoded-micon"><i class="ti-pencil"></i></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenuLink">
+                                                    <a class="dropdown-item waves-light waves-effect" href="user_info">編輯</a>
+                                                    <a class="dropdown-item waves-light waves-effect" href="#">待出貨</a>
+                                                    <a class="dropdown-item waves-light waves-effect" href="#">待收款</a>
+                                                    <a class="dropdown-item waves-light waves-effect" href="#">待收款</a>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -59,13 +75,22 @@
                                         <td>0987654321</td>
                                         <td>OOOOOOOOO</td>
                                         <td  style="text-align:center">
-                                            <a href="user_info"">
-                                                <span class="pcoded-micon"><i class="ti-pencil"></i></span>
-                                            </a>
+                                            <div class="">
+                                                <a class="dropdown-toggle dropdown" data-toggle="dropdown" href="#" data-dropup-auto="false">
+                                                    <span class="pcoded-micon"><i class="ti-pencil"></i></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenuLink">
+                                                    <a class="dropdown-item waves-light waves-effect" href="user_info">編輯</a>
+                                                    <a class="dropdown-item waves-light waves-effect" href="#">待出貨</a>
+                                                    <a class="dropdown-item waves-light waves-effect" href="#">待收款</a>
+                                                    <a class="dropdown-item waves-light waves-effect" href="#">待收款</a>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <br><br><br><br><br><br><br><br>
                         </div>
                     </div>
                 </div>

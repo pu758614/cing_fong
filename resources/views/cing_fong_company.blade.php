@@ -11,12 +11,29 @@
     <div class="main-body">
         <div class="page-wrapper">
             <div class="page-body">
+                <div class=row>
+                    <div class=col-md-3 m-b-10">
+                        <div class="input-group">
+
+                            <input type="text" class="form-control" style="width: 200px;">
+                            <span class="input-group-addon search-btn"><i class="ti-search"></i></span>
+                        </div>
+                    </div>
+
+                    <div class=col-md-3 m-b-10">
+                    <button class="btn btn-primary waves-effect waves-light" id="add_company" onclick="add_company()" >新增</button><p>
+                    </div>
+                </div>
+
+
+
                 <div class="card">
                     <div class="card-header">
                         <h5 >公司客戶資料</h5>
                     </div>
                     <div class="card-block table-border-style">
                         <div class="table-responsive">
+
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -49,14 +66,14 @@
                                             </div>
 
                                         </td>
-                                        
+
                                     </tr>
                                     <tr><a href=""></a>
                                         <th scope="row">2</th>
                                         <td>聯發科</td>
                                         <td>555444321</td>
                                         <td>07-1234567</td>
-                                        
+
                                         <td></td>
                                         <td  style="text-align:center">
                                             <div class="">
@@ -79,7 +96,7 @@
                                         <td>0987654321</td>
                                         <td>OOOOOOOOO</td>
                                         <td  style="text-align:center">
-                                             <div class="">
+                                                <div class="">
                                                 <a class="dropdown-toggle dropdown" data-toggle="dropdown" href="#" data-dropup-auto="false">
                                                     <span class="pcoded-micon"><i class="ti-pencil"></i></span>
                                                 </a>
@@ -103,9 +120,58 @@
         </div>
     </div>
 </div>
-@endsection
+<div class="modal fade modal-icon show" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id='modal_add_company' style="display: none;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" >
+                <h4 class="modal-title"  id="myModalLabel">新增</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4 m-b-10">
+                        <label class="from-label">名稱：*
+                        </label>
+                        <input type="text" class="from-control"  value="" >
+                    </div>
+                    <div class="col-md-2 m-b-10">
+
+                    </div>
+                    <div class="col-md-4 m-b-10">
+                        <label class="from-label">統編：*
+                        </label>
+                        <input type="text" class="from-control"  value="" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 m-b-10">
+                        <label class="from-label">電話：
+                        </label>
+                        <input type="text" class="from-control"  value="" >
+                    </div>
+                    <div class="col-md-2 m-b-10">
+
+                    </div>
+                    <div class="col-md-4 m-b-10">
+                        <label class="from-label">備註：
+                        </label>
+                        <input type="text" class="from-control"  value="" >
+                    </div>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">確定</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
-
+    function add_company() {
+        $('#modal_add_company').modal('show');
+    }
 
 </script>
+@endsection
