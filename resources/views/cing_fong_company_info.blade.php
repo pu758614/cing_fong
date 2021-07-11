@@ -20,7 +20,7 @@
                 <a href="company_client_info">
                     <button class="btn btn-inverse waves-effect waves-light" >返回</button><p>
                 </a>
-
+                @if($type=="company")
                 <div class="card">
                     <div class="card-header">
                         <h5 >公司客戶基本資料</h5>
@@ -224,7 +224,143 @@
                         </div>
                     </div>
                 </div>
+                @else
+                <div class="card">
+                    <div class="card-header">
+                        <h5 >個人客戶基本資料</h5>
+                    </div>
+                    <div class="card-block table-border-style">
+                        <div class="row">
+                            <form class="form-material col-sm-12">
 
+                                <div class="edit_basic" style="display: none;">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <input type="text"  class="form-control" required="" value="123456">
+                                            <span class="form-bar"></span>
+                                            <label class="float-label" >名稱</label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input type="text"  class="form-control" required="" disabled="disabled">
+                                            <span class="form-bar"></span>
+                                            <label class="float-label">電話</label>
+                                        </div>
+                                        <div class="col-sm-3">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control" required="">
+                                            <span class="form-bar"></span>
+                                            <label class="float-label">手機 </label>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <input type="text"  class="form-control" required="">
+                                            <span class="form-bar"></span>
+                                            <label class="float-label">傳真</label>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <input type="text"  class="form-control" required="">
+                                            <span class="form-bar"></span>
+                                            <label class="float-label">LINE</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <input type="text"  class="form-control" required="">
+                                            <span class="form-bar"></span>
+                                            <label class="float-label">LINE</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-6">
+                                            <input type="text"  class="form-control" required="">
+                                            <span class="form-bar"></span>
+                                            <label class="float-label">購買方式(ex: 露天-w54862w;奇摩-Y8875077980;電訂;E訂)</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-6">
+                                            <input type="text"  class="form-control" required="">
+                                            <span class="form-bar"></span>
+                                            <label class="float-label">地址</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <textarea class="form-control" required=""></textarea>
+                                            <span class="form-bar"></span>
+                                            <label class="float-label">備註</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="show_basic">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <span class="" style="font-size:14px;font-weight:bold;">名稱：</span>
+                                            <span style="">adasas</span>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span class="" style="font-size:14px;font-weight:bold;">電話：</span>
+                                            <span style="">adasas</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <span style="font-size:14px;font-weight:bold;">手機：</span>
+                                            <span class="" style="">adasas</span>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span class="" style="font-size:14px;font-weight:bold;">傳真：</span>
+                                            <span style=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <span style="font-size:14px;font-weight:bold;">LINE：</span>
+                                            <span class="" style="">adasas</span>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span class="" style="font-size:14px;font-weight:bold;">e-mile：</span>
+                                            <span style=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <span style="font-size:14px;font-weight:bold;">購買方式：</span>
+                                            <span class="" style="">露天(w54862w)、奇摩(Y8875077980)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <span style="font-size:14px;font-weight:bold;">地址：</span>
+                                            <span class="" style="">adasas</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <span class="" style="font-size:14px;font-weight:bold;">備註：</span>
+                                            <span style="">xxxxxxxxxxxx</span>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <input type="button" onclick="edit()" class="btn btn-primary btn-round waves-effect waves-light show_basic"  value="編輯" />
+                                        <input type="button" onclick="save()" class="btn btn-success  btn-round waves-effect waves-light edit_basic" style="display: none;" value="儲存" />
+                                        <input type="button" onclick="save()" class="btn btn-inverse btn-round waves-effect waves-light edit_basic" style="display: none;" value="取消" />
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                @endif
                 <div class="card">
                     <div class="card-header">
                         <h5 class="card-header-text">客戶出貨紀錄</h5>
@@ -469,6 +605,7 @@
                         </div>
                     </div>
                 </div>
+
                 <a href="company_client_info">
                     <button class="btn btn-inverse waves-effect waves-light" >返回</button><p>
                 </a>

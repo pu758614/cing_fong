@@ -30,13 +30,20 @@ Route::get('user_client_info', function () {
 Route::get('company_client_info', function () {
     return view('cing_fong_company');
 });
-Route::get('company_client_info', "Controller@index");
+
+
 
 Route::get('user_info', function () {
-    return view('cing_fong_user_info');
+    $assign = array(
+        'type' => 'user'
+    );
+    return view('cing_fong_company_info',$assign);
 });
 Route::get('company_info', function () {
-    return view('cing_fong_company_info');
+    $assign = array(
+        'type' => 'company'
+    );
+    return view('cing_fong_company_info',$assign);
 });
 
 Route::get('shipping_edit', function () {
