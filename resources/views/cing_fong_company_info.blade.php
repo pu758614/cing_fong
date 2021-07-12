@@ -343,7 +343,7 @@
                                     <div class="form-group row">
                                         <div class="col-sm-12">
                                             <span class="" style="font-size:14px;font-weight:bold;">備註：</span>
-                                            <span style="">xxxxxxxxxxxx</span>
+                                            <span style="">xiiiiii</span>
                                         </div>
                                     </div>
                                     <br>
